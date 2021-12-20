@@ -1,5 +1,5 @@
 #imports
-# import matplotlib
+import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import axes3d, Axes3D 
 import numpy as np
@@ -8,11 +8,11 @@ import numpy as np
 def main():
 
   # Constants Declaration
-  Base = -4 # Base^x
-  n = 15 #range of x
+  Base = -0.5 # Base^x
+  n = 150 #range of x
   density = 100 # intervals
-  PrintData = 0# True # 1 or 0
-  StoreData = 1
+  PrintData = 1 # True/false # 1 or 0
+  StoreData = 0
   TITLE = f'Mapping Im & Re : for {Base}^x, x_domain {n}, density {density}'
 
   x,y,z = genData(Base,n,density)       ## use either of these 
@@ -58,8 +58,9 @@ def plot(x,y,z,TITLE):  # plots figure
   ax.set_zlabel('y (Re) ')  # better orientation for visualisation
   ax.set_ylabel('z (Im)') # better orientation for visualisation
 
+  plt.show()
 
-print('start')
+
 if __name__ == '__main__' :
   main()
   
