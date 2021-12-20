@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import axes3d, Axes3D 
 import numpy as np
 plt.rcParams['figure.figsize']=(8,5)
-fig = plt.figure('Mapping Im & Re')
+fig = plt.figure('Mapping')
 ax = Axes3D(fig)
 
 np.random.seed(31)
